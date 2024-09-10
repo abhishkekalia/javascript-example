@@ -470,21 +470,18 @@ function fibonacci(n) {
 //   return sum - arrSum;
 // }
 
-// function findMissingnumber(arrData) {
-//   const n = arrData.length + 1;
-//   const sum = (n * (n + 1)) / 2;
-//   const charSum = arrData.reduce((acc, value) => acc + value, 0);
-//   return sum - charSum;
-// }
-// console.log("findMissingnumber", findMissingnumber([1, 2, 3, 4, 6]));
+function findMissingNumber(arr) {
+  const n = arr.length + 1;
+  const sum = (n*(n+1))/2;
+  const arrsum = arr.reduce()
+}
+console.log("findMissingnumber", findMissingnumber([1, 2, 3, 4, 6]));
 
-let number = 10
-function renderNumber(){
-  console.log("number", number)
+let number = 10;
+function renderNumber() {
+  console.log("number", number);
   //  let number = 20
   // console.table(["number", number])
   console.timeStamp("Starting operation");
-
-
 }
-renderNumber()
+renderNumber();

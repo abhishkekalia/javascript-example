@@ -28,9 +28,14 @@ const callBy = {
     console.log("simpleFunction", this.name);
   },
   arrowFunction: () => {
-    this.lastName="abhishek kumar kalia"
+    this.lastName = "abhishek kumar kalia"
     console.log("arrowFunction", this.lastName);
   },
 };
 callBy.simpleFunction();
 callBy.arrowFunction();
+
+const person = {
+  name: "abhishek kumar",
+  mobileNumber: "123456789"
+}

@@ -1,9 +1,52 @@
 <html>
-    <head></head>
-    <body>
-        <!-- <script src="./index.js"></script> -->
-        <!-- <script src="./krishna.js"></script> -->
-        <!-- <script src="./abhishek.js"></script> -->
-        <script src="./capgemini.js"></script>
-    </body>
+
+<head></head>
+
+<body>
+    <!-- <script src="./index.js"></script> -->
+    <!-- <script src="./krishna.js"></script> -->
+    <!-- <script src="./abhishek.js"></script> -->
+    <script src="./capgemini.js"></script>
+    <h3>What is lexical scope</h3>
+    <p>The code in one scope can access variable in same scope or any scope out of it.</p>
+    <h3>useLayoutEffect</h3>
+    <p>Page load hone se pahle run hota h </p>
+    <h3>What is an event loop in JavaScript ?</h3>
+    <p>
+        JavaScript is known for its ability to handle asynchronous task efficiently, even through it is single-threaded.
+    </p>
+    <p>
+        When we say that javascript is single threaded , it means that javascript executes code one line at a time . in
+        a sequence the main thread where all javascript code run can only do one task at a time and there is no way to
+        run multiple pieces of code in parallel on this thread. this might sound limiting . but javascipt design is well
+        suited for handling many tasks efficiently thanks to event loop
+    </p>
+    <h4>How do event loop work</h4>
+    <p>Call stack</p>
+    <p>javascipt uses a call stack to keep track of the currently executing function . it means where the program is in
+        its execution</p>
+    <p>Callback Queue</p>
+    <p>Asynchronous operations , such as I/O operations or timers are handled by the browser or node js runtime . When
+        these operations are complete. corresponding functions (callback) are placed in the callback queue</p>
+    <p>Event loop</p>
+    <p>The event loop continously checks the call stack and the callback queue if the callstack is empty . it takes the
+        first function from the calback queue and push it to call stack for execution</p>
+    <p>Execution</p>
+    <p>The function on top of call stack is executed. if this function contains asynchronous code, it might initiate
+        further asynchronous operations </p>
+
+    <p>Callback execution</p>
+    <p>When an asynchronous operation is complate , its callback is placed in the callback queue</p>
+
+    <p>Repeat</p>
+    <p>The event loop continues this process, ensuring that the callstack is alwas empty before taking the next function
+        from the callback queue</p>
+
+    <h4>Event bubbling in JavaScript</h4>
+    <p>Event bubbling is a method in javascript of event propogation in the HTMl DOM where an event triggered in an
+        element inside another element bubbles up through the hierarchy. When both the inner and outer element have
+        event listener registered for the same event, event bubbling ensures the event is first handled by the innermost
+        element and then propogated outward to the containing element.</p>
+</body>
+
 </html>
