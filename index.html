@@ -6,7 +6,6 @@
     <!-- <script src="./index.js"></script> -->
     <!-- <script src="./krishna.js"></script> -->
     <!-- <script src="./abhishek.js"></script> -->
-    <script src="./capgemini.js"></script>
     <h3>What is lexical scope</h3>
     <p>The code in one scope can access variable in same scope or any scope out of it.</p>
     <h3>useLayoutEffect</h3>
@@ -47,6 +46,41 @@
         element inside another element bubbles up through the hierarchy. When both the inner and outer element have
         event listener registered for the same event, event bubbling ensures the event is first handled by the innermost
         element and then propogated outward to the containing element.</p>
+
+    <p>Event bubbling is a type of event propagation in which an event triggered on a child elemnet "bubbles up" through
+        its parent element . the event start from the target element and then moves up to the root element of the DOM
+    </p>
+
+    <h3>Event trigger</h3>
+    <p>When and event (Like click) happens on a child element , the event first triggers at the target element </p>
+    <h3>Propagation</h3>
+    <p>After the target elemnent processes the event , the event is then passed to the parent element and continues
+        moving up to the root</p>
+    <h3>Bubble phase</h3>
+    <p>The event can be intercepted and handled at any of the parent elements along the path</p>
+    <div id="parent">
+        <button id="child">Click Me</button>
+    </div>
+    <h3>Event Delegation</h3>
+    <p>Event delegation is a technique in which a single event listener is added to a parent element to handle events that occurs on its child elements even if those child elements are added later dynamically. This reduces the need to attach event listeners to each child individually</p>
+    <h2>How it works</h2>
+    <p>Single Listener</p>
+    <p>Instead of adding listeners to each child element, you add a listener to a parent eleemnt that will listen for eventscoming from any of its descendants.</p>
+    <p>Event handling</p>
+    <p>When the event bubbles up to the parent the event listener on the parent can determine which child element triggered the event by inspacting the event.targer</p>
+    <p>Dynamic Elements</p>
+    <p>Event Delegation is useful for handling events for handling events on dynamically added eleemnts that doesnot exists when the page is first loaded</p>
+   
+    <ul id="todo-list">
+        <li><button class="delete-btn">Delete 1</button></li>
+        <li><button class="delete-btn">Delete 2</button></li>
+    </ul>
+
+    <h3>Void element in html</h3>
+    <p>Void element in html are that do not have any content or closing tags . These elements are also known as self closing elemnets, as they are automatically closed by the browser. They represents an empty structure and are offen used </p>
+    <p>br tag , area tag , input, image, video tag etc</p>
+    <script src="./capgemini.js"></script>
+
 </body>
 
 </html>
